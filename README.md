@@ -41,3 +41,7 @@ Anaconda : https://docs.anaconda.com/anaconda/install/linux/
 - For Ubuntu open the terminal 
   - for python file \
     ```xyz-PC:-$ python filename.py```
+    
+ ## Current Repo Tree
+ ![image](https://user-images.githubusercontent.com/64308188/133922789-18e31a50-ca78-439f-8218-29833a368918.png)
+
