@@ -42,6 +42,22 @@ Anaconda : https://docs.anaconda.com/anaconda/install/linux/
   - for python file \
     ```xyz-PC:-$ python filename.py```
     
+ ### Packages Installation
+ - For some modules to work with in the repo there might be usage of external modules which may lead to error when you directly run these files prior installation 
+ - to install these modules you can directly refer to pip[python package installer] or conda repo based on the installer on your machine
+- If python is installed as standalone package in ubuntu or windows installer then pip should already be part of it, if not first install pip using following command:
+
+``` python get-pip.py```
+- or upgrade the current version using 
+
+``` python -m pip install --upgrade pip```
+- If you have installed anaconda you would already been configured with conda base env so you can refer the below repo's as requirement
+
+<a href="https://pypi.org/project/pip/" target="_blank">Pip Repo</a>
+<a href="https://anaconda.org/anaconda/conda" target = "_blank">Conda Repo</a>
+
+The only thing you have to do is go to that repo and search for package you wana install and it will give you the reuired information about it.
+
  ## Current Repo Tree
  ![image](https://user-images.githubusercontent.com/64308188/133922789-18e31a50-ca78-439f-8218-29833a368918.png)
 
