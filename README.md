@@ -33,6 +33,27 @@ Python: sudo apt install python
 Anaconda : https://docs.anaconda.com/anaconda/install/linux/
 ```
 
+### Creating Environments
+Once the installations is done you can create seperate envs to work standalone with this repo, which means that's like a private space where you install packages specific 
+to this repo which doesn't effect the global packages, you can create env's in wo different ways 
+- Creating env using pipenv
+  ```
+  pip--install: pip install virtualenv
+  create env : virtualenv <name>
+  ```
+- Activation and deactivation
+ ```
+ acivation(Wndows) : mypthon\Scripts\activate
+ activation(Ubuntu) : Source mypython/bin/activate
+ deactivation : deactivate
+ ```
+- Creating using conda
+```
+creation : conda create -n <env_name> <python_version>
+activation : conda activate <env_name>
+deactivation : conda deactivate
+```
+
 ### Running scripts
 - For windows open the shell at desired folder 
    - for python file 
