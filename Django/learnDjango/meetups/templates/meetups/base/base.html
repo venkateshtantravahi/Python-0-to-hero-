@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}My Meetups{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+        {% block site_css %}{% endblock %}
+    </head>
+    <body>
+        <!--to show the content stored in a variable in templates we use the django concept called interpolation as shown below
+           variables in templates are those keys that we use in render -->
+        <header id="main-header">
+            <nav><a href="/meetups" id="main-logo">DjangoMeetups</a></nav>
+            <h1>{% block main_heading %}{% endblock %}</h1>
+            {% block header_content %}{% endblock %}
+        </header>
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+    </body>
+</html>
