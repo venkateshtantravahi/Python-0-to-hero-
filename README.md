@@ -79,6 +79,7 @@ deactivation : conda deactivate
 
 The only thing you have to do is go to that repo and search for package you wana install and it will give you the reuired information about it.
 
- ## Current Repo Tree
- ![image](https://user-images.githubusercontent.com/64308188/133922789-18e31a50-ca78-439f-8218-29833a368918.png)
+### Liked Content 
+
+Please hit a star 🌟 and follow me on github for more like this. 
 
