@@ -6,7 +6,7 @@ objects have two properties namely attributes and behaviour
 """
 #creating a parrot class with attributes 
 #attributes are two types class and instance attributes 
-#instance attributes are defined under speacial method called as __init__()
+#instance attributes are defined under a special method named __init__()
 #every class is like a blue print for objects and objects posses every property of class
 class Parrot:
 
@@ -130,8 +130,8 @@ woo = Parrot("Woo",15)
 print("Blu is a {}".format(blu.__class__.species))
 print("Woo is also a {}".format(woo.__class__.species))
 
-# acces the instance attributes
-#where as instance attribues are accessed by object name.attribute name
+# access the instance attributes
+#where as instance attributes are accessed by object name.attribute name
 print("{} is {} years old.".format(blu.name, blu.age))
 print("{} is {} years old.".format(woo.name, woo.age))
 

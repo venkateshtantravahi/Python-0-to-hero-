@@ -6,7 +6,7 @@ j=int(y)
 print("The Sum:", i+j)
 
 #Or else even we can simplify the above program:
-x=int(input("Enter Fisrt number:"))
+x=int(input("Enter First number:"))
 y=int(input("Enter Second Number:"))
 print("The Sum:", i+j)
 

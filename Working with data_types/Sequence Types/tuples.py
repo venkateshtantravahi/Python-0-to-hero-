@@ -4,14 +4,14 @@ empty_tuple = ()
 print("Empty Tuple Declaration",empty_tuple)
 
 str_tuple = ('entiretyn', 'python','programming')
-print("Homogenious data in tuple",str_tuple)
+print("Homogeneous data in tuple",str_tuple)
 
 print(type(str_tuple))
 
 h_tuple = (1, 23, 34, 'string', 'guido', True)
-print("Heterogenous data in tuple",h_tuple)
+print("Heterogeneous data in tuple",h_tuple)
 
-# Tuple Concatination
+# Tuple Concatenation
 print(str_tuple + h_tuple)
 
 # Nesting Tuples

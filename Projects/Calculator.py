@@ -49,7 +49,7 @@ while True :
     list = []
     print("Simple Number Calculator")
     print(" Enter 'a' for addition")
-    print(" Enter 's' for substraction")
+    print(" Enter 's' for subtraction")
     print(" Enter 'm' for multiplication")
     print(" Enter 'v' for average")
     print(" Enter 'q' for quit")

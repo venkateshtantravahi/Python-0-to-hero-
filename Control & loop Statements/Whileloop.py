@@ -10,7 +10,7 @@ Python interprets any non-zero numbers as True. None and '0' are interpreted as 
 """
 #program to sum n digits
 n = int(input("Enter a number: "))
-#intializing sum and counter 
+#initializing sum and counter 
 sum = 0
 counter = 1
 

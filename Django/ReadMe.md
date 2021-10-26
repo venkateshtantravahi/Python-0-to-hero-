@@ -87,7 +87,7 @@ you generate instructions to db , So once after generating
 instructions you should ask the db to follow instructions
 to make table so to do that run the following command. \
 ``python manage.py migrate`` \
-One thing we need to keep in mind that everytime you create 
+One thing we need to keep in mind that every time you create 
 a new model or modify the existing one you need to 
 generate and execute instructions to get modified in db.
 
@@ -97,7 +97,7 @@ in our project they are : \
 ![img_3.png](img_3.png)
 
 #### Managing Data
-So once after creating the data in the db atleast there 
+So once after creating the data in the db at least there 
 must be one admin who should have access to modify data 
 for that we can use the django provided built-in 
 admin panel which can only be accessed to website creator

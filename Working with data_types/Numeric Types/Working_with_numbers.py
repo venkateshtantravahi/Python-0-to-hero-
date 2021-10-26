@@ -23,13 +23,13 @@ print('Returns not a number type', math.nan)
 2.copysign(x,y) " copies the sign of one variable to other
 3.fabs(x) " returns the absolute value given by user
 4.factorial(x) " which returns factorial of number(5! = 5*4*3*2*1)
-5.floor(x) "returing the smallest rounding integer
+5.floor(x) "returning the smallest rounding integer
 6.fsum(iterable_object) "which sums up the items in iterable object
 7.gcd(x,y) "greatest common divisor of two numbers
 8.isfinite(x) "checks whether the number is finite or not
 9.isinf(x) " chcks the numbers is infinite or not
 10.isnan(x) " returns if data is not a number
-11.remainder(x,y) "gives the remiander of division
+11.remainder(x,y) "gives the remainder of division
 """
 
 x = float(input('Input some float or decimal value: '))
