@@ -9,7 +9,14 @@ $ -> checks if strings ends with certain character
 +, ? -> matches one or more occurrences towards the pattern left
 {x,y}, [x-y] -> its used for matching number of characters where x is lower limit and y is upper limit
 | -> it acts like a or operator
-() ->grouping in pattern 
+() ->grouping in pattern
+
+This is a doctest...
+>>> result = re.match(pattern=pattern, string=test_string)
+>>> result.span()
+(0, 5)
+>>> result.string
+'abyss'
 """
 import re 
 
