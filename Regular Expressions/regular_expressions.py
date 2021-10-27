@@ -5,8 +5,8 @@ MetaCHaracters : [] . ^ $ * ? {} () \ |
 . -> any single character except '\n'
 ^ -> checks if string starts with certain pattern or character
 $ -> checks if strings ends with certain character
-* -> used for counting occurances of patterns
-+, ? -> matches one or more occurances towards the pattern left
+* -> used for counting occurrences of patterns
++, ? -> matches one or more occurrences towards the pattern left
 {x,y}, [x-y] -> its used for matching number of characters where x is lower limit and y is upper limit
 | -> it acts like a or operator
 () ->grouping in pattern 

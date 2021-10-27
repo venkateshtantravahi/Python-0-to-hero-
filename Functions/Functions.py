@@ -1,5 +1,5 @@
 """
-Function is a block or chunk of code which is used for fullfilling a particular task 
+Function is a block or chunk of code which is used for fulfilling a particular task 
 
 Functions are three types:
 Built-in functions

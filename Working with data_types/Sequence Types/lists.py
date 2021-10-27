@@ -35,7 +35,7 @@ l = [12,13]
 m_list.append(l)
 print('\nm_list ', m_list)
 
-#extend is used for appending a list to ther
+#extend is used for appending to a list
 d_list.extend(s_list)
 
 print('List after extending ', d_list)

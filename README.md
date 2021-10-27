@@ -5,13 +5,13 @@
 
 <p align="left">
 This repo is all about educational purpose. It contains everything that you need to know about python3 with some docs and code which is constantly updating with either 
-  some concepts or projects. There is no pre-requisite for refering this repo, any one can start learning this as concepts are documented from scratch.
+  some concepts or projects. There is no pre-requisite for referring this repo, any one can start learning this as concepts are documented from scratch.
 </p>
 
 ## To Get a Copy
 - You can directly download the zip file by using the following link :
 <a href="https://github.com/venkateshtantravahi/Python-0-to-hero-/archive/refs/heads/main.zip" target="_blank">Python.zip</a>
-- You can directly clone the repo using https or ssh or github cli thorugh thier prompts 
+- You can directly clone the repo using https or ssh or github cli through their prompts 
 ``` 
 command: git clone https://github.com/venkateshtantravahi/Python-0-to-hero-.git
 ```
@@ -34,7 +34,7 @@ Anaconda : https://docs.anaconda.com/anaconda/install/linux/
 ```
 
 ### Creating Environments
-Once the installations is done you can create seperate envs to work standalone with this repo, which means that's like a private space where you install packages specific 
+Once the installations is done you can create separate envs to work standalone with this repo, which means that's like a private space where you install packages specific 
 to this repo which doesn't effect the global packages, you can create env's in wo different ways 
 - Creating env using pipenv
   ```

@@ -3,7 +3,7 @@
 """
 1. Arithmetic operators
 + -> addition
-- -> substraction
+- -> subtraction
 * -> multiplication
 / -> division
 // -> integer division
@@ -81,10 +81,10 @@ print('Bitwise and of j is: ' + str(j << 3))
 Assignment Operators
  = -> assignment
  += -> adding with assignment
- -= -> substracting with assignment
+ -= -> subtracting with assignment
  *= -> multiplication with assignment
  /= -> division with assignment
- // -> integer divsion with assignment
+ // -> integer division with assignment
  %= -> modulus with assignment
  **= ->exponent with assignment
  ^= -> bitwise xor with assignment
