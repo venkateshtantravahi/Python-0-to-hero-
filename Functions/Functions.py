@@ -99,6 +99,35 @@ def multiplication(*args):
 y = multiplication(1,2,34,56,4,3,5,67,5,4,3)
 print(y)
 
+def multiplication_with_doctests(*args):
+    """
+    This is a docstring that documents what the function does.
+    
+    Multiply all args together and return the result.
+    
+    These are doctests that can be run using this command:
+    `python3 -m doctest -v Functions.py`
+    
+    >>> multiplication_with_doctests(0, 0, 0, 0)
+    0
+    >>> multiplication_with_doctests(1000000, 0)
+    0
+    >>> multiplication_with_doctests(1, 1, -1, -1)
+    1
+    >>> multiplication_with_doctests(2, 2, 2, 2)
+    16
+    >>> multiplication_with_doctests(5, 2, -1)
+    -10
+    """
+    total = 1
+    for i in args:
+        total *= i
+    return total
+
+y = multiplication_with_doctests(1,2,34,56,4,3,5,67,5,4,3)
+print(y)
+
+
 print('Printing global variable: ', name)
 
 double = lambda x:x*2
