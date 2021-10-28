@@ -10,7 +10,7 @@ print("\nList of numbers ", n_list)
 s_list = ['Typing', 'Python', 'Lists']
 print('\nList of strings', s_list)
 
-d_list = ['John Deo', 32, 'London']
+d_list = ['John Deo', 32, 'London',23.5678]
 print('\nList with different data types', d_list)
 
 m_list = [['Multi', 'Dimensional'], ['Lists']]
@@ -44,5 +44,30 @@ print('List after extending ', d_list)
 n_list.insert(1, 100)
 print('n_list after inserting ', n_list)
 
+#Accessing List Elements
 print(n_list[1])
 print(n_list[6])
+print(n_list[1:5])
+
+
+fruits = ['orange', 'banana', 'pinapple','watermelon','banana','sapota','banana']
+print("Fruits list {}".format(fruits))
+#get count of item from list
+count = fruits.count('banana')
+print('Fruit {} is repeated for {} times'.format('banana', count))
+
+# get index of item from list
+ind = fruits.index('watermelon')
+print('Index of {} in list is {}'.format('watermelon', ind))
+
+# reversing string
+print("First wasy : {}".format(fruits[::-1]))
+reverse = fruits.reverse()
+print("Reversed list ",fruits)
+# sorting list 
+sort = fruits.sort()
+print("Sorted list",fruits)
+
+# pop element from list 
+print("The popped element from list is {}".format(fruits.pop()))
+
