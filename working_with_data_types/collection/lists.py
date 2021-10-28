@@ -1,4 +1,5 @@
 # Python Program to demonstrate lists
+from collections import deque
 
 # Creating lists
 b_list = []
@@ -70,3 +71,23 @@ print("Sorted list", fruits)
 
 # pop element from list
 print("The popped element from list is {}".format(fruits.pop()))
+
+# using list as stack(LIFO)
+stack = [78, 79, 80, 81]
+stack.append(82)
+stack.append(84)
+print("After adding items to stack : {}".format(stack))
+print("Removing element from stack : {}".format(stack.pop()))
+
+# using lists as queues(FIFO)
+queue = deque(["John", "Abraham", "Micheal"])
+queue.append("Graham_Bell")
+print("Adding to queue: {}".format(queue))
+print("FIFO is: {}".format(queue.popleft()))
+
+
+# creating cubes list
+cubes = []
+for i in range(10):
+    cubes.append(i ** 3)
+print("The cubes list is: {}".format(cubes))
