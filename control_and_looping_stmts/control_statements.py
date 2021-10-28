@@ -18,7 +18,7 @@ else:
 
 """
 
-num = int(input('PLease enter a number: '))
+num = int(input("PLease enter a number: "))
 if num > 0:
     print(num, " is a positive number.")
 
@@ -50,22 +50,22 @@ if num >= 0:
 else:
     print("Negative Integer")
 
-print('////////////////////////////////////////////////////////////////')
+print("////////////////////////////////////////////////////////////////")
 
-age = int(input('Please enter your age: '))
+age = int(input("Please enter your age: "))
 
 if age >= 21:
     isGraduated = True
 else:
     isGraduated = False
 
-if age >= 18 :
+if age >= 18:
     hasLicense = True
 else:
     hasLicense = False
 
 if isGraduated:
-    print('He is graduated and has license.')
+    print("He is graduated and has license.")
 elif hasLicense and not isGraduated:
     print('He"s not graduated but has license')
 else:

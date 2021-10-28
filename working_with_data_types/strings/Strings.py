@@ -23,31 +23,31 @@ import encodings
 20.swapcase() ==> lower to upper and viceversa
 """
 
-s = 'PYTHON PROGRAMMING is Cool'
-ns = '- Is An Operator'
-print('old string: ', s)
-print('Capitalizes_string:', s.capitalize())
-print('Capitalizes_string:', ns.capitalize())
+s = "PYTHON PROGRAMMING is Cool"
+ns = "- Is An Operator"
+print("old string: ", s)
+print("Capitalizes_string:", s.capitalize())
+print("Capitalizes_string:", ns.capitalize())
 
-st = 'PYTHON PROGRAMMING'
-print('Lowercased String: ', st.casefold())
+st = "PYTHON PROGRAMMING"
+print("Lowercased String: ", st.casefold())
 
 if s.casefold() == st.casefold():
-    print('The strings are equal.')
+    print("The strings are equal.")
 else:
-    print('The strings are not equal.')
+    print("The strings are not equal.")
 
-print('Centered String:', st.center(30, '*'))
+print("Centered String:", st.center(30, "*"))
 
-msg = 'python is popular programming language'
-print('No of times p occurred in string was: ', msg.count('p'))
+msg = "python is popular programming language"
+print("No of times p occurred in string was: ", msg.count("p"))
 
 sf = 'Python programming is cool, isn"t it?'
-print('Count without start and end is: ', sf.count('i'))
-print('Count with start and end is: ', sf.count('i', 9, 20))
+print("Count without start and end is: ", sf.count("i"))
+print("Count with start and end is: ", sf.count("i", 9, 20))
 
 
-string = 'Python!'
+string = "Python!"
 string1 = string.encode("ascii")
-print('Without encoding:', string)
-print('With encoding: ',string1)
+print("Without encoding:", string)
+print("With encoding: ", string1)

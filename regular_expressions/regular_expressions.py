@@ -11,10 +11,10 @@ $ -> checks if strings ends with certain character
 | -> it acts like a or operator
 () ->grouping in pattern 
 """
-import re 
+import re
 
-pattern = '^a...s$'
-test_string = 'abyss'
+pattern = "^a...s$"
+test_string = "abyss"
 result = re.match(pattern=pattern, string=test_string)
 
 if result:

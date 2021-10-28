@@ -11,9 +11,9 @@ print(lst2)
 for val in lst2:
     sum += val
 
-print('The sum of elements in list: ', sum)
+print("The sum of elements in list: ", sum)
 
-lst = list(range(2,30,3))
+lst = list(range(2, 30, 3))
 print("List created using range class was: ", lst)
 
 for i in range(11):
@@ -25,24 +25,24 @@ for val in range(len(lst)):
 for i in lst:
     print(i)
 else:
-    print('No item left')
+    print("No item left")
 
 for i in lst:
     if i == 31:
-        print('found')
+        print("found")
 else:
-    print('Not found')
+    print("Not found")
 
 
-student_name = 'John'
-marks = {'John':90, 'Jules': 55, 'Clark':75}
+student_name = "John"
+marks = {"John": 90, "Jules": 55, "Clark": 75}
 for student in marks:
     if student == student_name:
         print(marks[student])
         break
 else:
-    print('No entry found with that name.')
+    print("No entry found with that name.")
 
-string = 'Python Programming'
+string = "Python Programming"
 for char in string:
-    print('CHaracter in string is:', char)
+    print("CHaracter in string is:", char)

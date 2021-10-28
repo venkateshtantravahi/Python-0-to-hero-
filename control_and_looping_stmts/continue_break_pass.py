@@ -5,17 +5,16 @@ Loops iterate over a block of code until the test expression is flase, but somet
 to terminate the current iteration or even whole loop that's when break and continue come into picture
 """
 
-for char in 'Python':
-    if char == 'h':
+for char in "Python":
+    if char == "h":
         break
-    print("Breaked char was: ",char)
+    print("Breaked char was: ", char)
 
-for char in 'Python':
-    if char == 'h':
+for char in "Python":
+    if char == "h":
         continue
     print(char)
 
-sequence = {'p','y','t','h','o','n'}
+sequence = {"p", "y", "t", "h", "o", "n"}
 for val in sequence:
     pass
-

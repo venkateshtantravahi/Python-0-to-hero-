@@ -7,14 +7,16 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meetups', '0001_initial'),
+        ("meetups", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='meetup',
-            name='image',
-            field=models.ImageField(default=django.utils.timezone.now, upload_to='images'),
+            model_name="meetup",
+            name="image",
+            field=models.ImageField(
+                default=django.utils.timezone.now, upload_to="images"
+            ),
             preserve_default=False,
         ),
     ]

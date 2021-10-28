@@ -20,9 +20,9 @@ from django.conf import settings
 from django.views.generic.base import RedirectView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='/meetups')),
-    path('meetups/', include('meetups.urls'))  #this will include the app built in urls to global url path
+    path("admin/", admin.site.urls),
+    path("", RedirectView.as_view(url="/meetups")),
+    path(
+        "meetups/", include("meetups.urls")
+    ),  # this will include the app built in urls to global url path
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-

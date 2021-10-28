@@ -6,28 +6,40 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meetups', '0004_auto_20211017_2348'),
+        ("meetups", "0004_auto_20211017_2348"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Organizers',
+            name="Organizers",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('email', models.EmailField(max_length=254, unique=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                ("email", models.EmailField(max_length=254, unique=True)),
             ],
         ),
         migrations.AddField(
-            model_name='meetup',
-            name='date',
-            field=models.DateField(default='2021-10-18'),
+            model_name="meetup",
+            name="date",
+            field=models.DateField(default="2021-10-18"),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='meetup',
-            name='organizers_email',
-            field=models.ForeignKey(default=12, on_delete=models.SET('dummy@gmail.com'), to='meetups.organizers'),
+            model_name="meetup",
+            name="organizers_email",
+            field=models.ForeignKey(
+                default=12,
+                on_delete=models.SET("dummy@gmail.com"),
+                to="meetups.organizers",
+            ),
             preserve_default=False,
         ),
     ]

@@ -2,13 +2,14 @@
 Rock Paper Scissor Project without UI
 """
 
-import random, re , os
-i_count, u_count = 0,0
+import random, re, os
+
+i_count, u_count = 0, 0
 
 # Clearing the input window before appearing
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system("cls" if os.name == "nt" else "clear")
 
-while( 1 < 2):
+while 1 < 2:
     print("\n")
     print("Rock-Paper-Scissor--- Let's Shoot!")
     userChoice = input("Choose Your Weapon [R]ock,[P]aper, [S]cissor: ")
@@ -18,18 +19,18 @@ while( 1 < 2):
         continue
     # Echo the user's choice
     print("You Choose:", userChoice)
-    choices = ['R', 'P', 'S']
+    choices = ["R", "P", "S"]
     opponentChoice = random.choice(choices)
     print("I Choose: ", opponentChoice)
     if opponentChoice == str.upper(userChoice):
         print("Match Tie!!")
-    elif opponentChoice == 'S' and userChoice.upper() == 'R':
+    elif opponentChoice == "S" and userChoice.upper() == "R":
         print("Rock Beats Scissor, I Win!")
         continue
-    elif opponentChoice == 'P' and userChoice.upper() == 'S':
+    elif opponentChoice == "P" and userChoice.upper() == "S":
         print("Scissor Beats Paper, I Win!!")
         continue
-    elif opponentChoice == 'R' and userChoice.upper() == 'P':
+    elif opponentChoice == "R" and userChoice.upper() == "P":
         print("Paper Beats Rock, I Win!!!")
         continue
     else:
