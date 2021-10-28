@@ -58,7 +58,7 @@ Traceback (most recent call last):
 AttributeError: 'ComplexNumbers' object has no attribute 'imag'
 """
 
-#we can delete a entire mathod of class by refering to it
+#we can delete a entire method of class by referring to it
 #del ComplexNumbers.get_data
 #num1.get_data()
 """
