@@ -73,6 +73,7 @@ print("Symmetric-Difference btw A,B", A ^ B)
 print("Symmetric-Difference btw A,B", A.symmetric_difference(B))
 
 """
+<<<<<<< HEAD
 5. isdisjoint(value)
 Determines whether or not two sets have any elements in common
 returns True if x1 and x2 have no items in common
@@ -122,3 +123,50 @@ update x1, retining elements found in either x1 or x2 but not in both
 x1.symmetric_difference_update(x2)
 print(x1)
 
+=======
+Frozen Sets
+Python provides another built-in type called a frozenset, which is in all respects exactly like a set, 
+except that a frozenset is immutable. You can perform non-modifying operations on a frozenset.
+"""
+fs = frozenset(['foo','bar','zoo'])
+
+print("The frozen set is {}".format(fs))
+print("Length of frozen set is {}".format(fs))
+
+#intersectioin operation with frozenset 
+print("The intersection operation results: ",fs & {'baz', 'qux', 'quux'})
+
+# restrictions with frozenset 
+"""
+>>> fs.add('quz')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'add'
+>>> fs.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'pop'
+>>> fs.clear()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'clear'
+"""
+
+# Frozensets and Augmented Assignment
+"""
+Python does not perform augmented assignments on frozensets in place. The statement x &= s is effectively equivalent to x = x & s. 
+It isn’t modifying the original x. It is reassigning x to a new object, and the object x originally referenced is gone.
+"""
+f = frozenset(['foo', 'bar', 'baz'])
+print("Originally created frozenset memory id : {}".format(id(f)))
+#augmented assignment
+f &= s
+print("ID of f after augemented assignment is {}".format(id(f)))
+
+# Creating dict with frozensets 
+"""As sets are unhashable we can't use them to create dict obj but as frozenset are immutable we can use them as keys and other iterable obj as keys"""
+x = frozenset({1, 2, 3})
+y = frozenset({'a', 'b', 'c'})
+d = {x: 'foo', y: 'bar'}
+print("The newly created dict obj is {}".format(d))
+>>>>>>> 1ec0c1ed479046c44d936dbcece5b02caa11afb1
