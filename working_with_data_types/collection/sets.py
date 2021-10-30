@@ -71,3 +71,54 @@ print("Difference btw A,B", A.difference(B))
 """4. Symmetric Difference"""
 print("Symmetric-Difference btw A,B", A ^ B)
 print("Symmetric-Difference btw A,B", A.symmetric_difference(B))
+
+"""
+5. isdisjoint(value)
+Determines whether or not two sets have any elements in common
+returns True if x1 and x2 have no items in common
+"""
+x1 = {'foo', 'bar','baz'}
+x2 = {'baz', 'qux', 'cux'}
+
+print(x1.isdisjoint(x2))
+print(x1.isdisjoint(x2-{'baz'}))
+
+"""
+6. x1.issubset(x2) / x1 <= x2
+returns True if x1 is usbset of x2 and viceversa
+"""
+num1 = {2,3,4}
+print(num1.issubset({1,2,3,4,5,6,7,8,9}))
+print(num1 <= {2,3,4})
+print(num1 < {2,3,4})
+
+"""
+7. issuperset() 
+superset is reverse of subset 
+returns true if x1 is superset of x2
+"""
+print(x1.issuperset({'foo'}))
+print(x1 >= {'foo'})
+print(x1 > {'foo','bar','baz'})
+
+"""
+8. intersection_update() or &=
+updates the current set with common elements btw both of them 
+"""
+x1.intersection_update(x2)
+print(x1)
+
+"""
+9. difference_update() or -=
+modify set by difference
+"""
+x1.difference_update(x2)
+print(x1)
+
+"""
+10. symmetric_difference_update() or ^=
+update x1, retining elements found in either x1 or x2 but not in both 
+"""
+x1.symmetric_difference_update(x2)
+print(x1)
+

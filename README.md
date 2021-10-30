@@ -1,7 +1,30 @@
-<h1 align="center">Everything You Need to know about Python3</h1>
 <p align="center">
-  <img src="https://th.bing.com/th/id/OIP.vfW3CHC6irCGHk3DEPjlnwHaEK?w=282&h=180&c=7&r=0&o=5&pid=1.7" alt='Python Logo' />
+  <a href="https://github.com/venkateshtantravahi/Python-0-to-hero-">
+    <img src="https://bensstats.files.wordpress.com/2020/08/zero-to-hero.gif" alt='Python Logo' />
+  </a>
 </p>
+<div align="center">
+  <h1 align="center">Python zero-to-hero</h1>
+  <a>
+    <img src="https://img.shields.io/github/languages/count/venkateshtantravahi/Python-0-to-hero-" />
+  </a>
+  <a href="https://github.com/psf/black">
+    <img src="https://img.shields.io/static/v1?label=code%20style&message=black&color=black&style=flat-square" height="20" alt="code style: black">
+  </a>
+  <a>
+    <img src="https://img.shields.io/github/repo-size/venkateshtantravahi/Python-0-to-hero-">
+  </a>
+  <br>
+  <a href="https://github.com/venkateshtantravahi/Python-0-to-hero-/CONTRIBUTING.md">
+    <img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square" height="20" alt="Contributions Welcome">
+  </a>
+  <a>
+    <img src="https://img.shields.io/github/forks/venkateshtantravahi/Python-0-to-hero-?style=social">
+  </a>
+  <a>
+    <img src="https://img.shields.io/github/stars/venkateshtantravahi/Python-0-to-hero-?style=social">
+  </a>
+</div>
 
 <p align="left">
 This repo is all about educational purpose. It contains everything that you need to know about python3 with some docs and code which is constantly updating with either 
@@ -78,6 +101,15 @@ deactivation : conda deactivate
 <a href="https://anaconda.org/anaconda/conda" target = "_blank">Conda Repo</a>
 
 The only thing you have to do is go to that repo and search for package you wana install and it will give you the reuired information about it.
+
+Once you have *pip* and *conda* please hit the following command to get all packages that are used in this repo: 
+```
+pip install requirements.txt
+```
+
+### Contributions
+---
+Contributors please refer <a href="https://github.com/venkateshtantravahi/Python-0-to-hero-/blob/main/contribution.md">Contribution guidelines</a> before making a PR.
 
 ### Liked Content 
 
