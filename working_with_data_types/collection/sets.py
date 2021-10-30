@@ -123,7 +123,7 @@ update x1, retining elements found in either x1 or x2 but not in both
 x1.symmetric_difference_update(x2)
 print(x1)
 
-=======
+"""
 Frozen Sets
 Python provides another built-in type called a frozenset, which is in all respects exactly like a set, 
 except that a frozenset is immutable. You can perform non-modifying operations on a frozenset.
@@ -169,4 +169,4 @@ x = frozenset({1, 2, 3})
 y = frozenset({'a', 'b', 'c'})
 d = {x: 'foo', y: 'bar'}
 print("The newly created dict obj is {}".format(d))
->>>>>>> 1ec0c1ed479046c44d936dbcece5b02caa11afb1
+
