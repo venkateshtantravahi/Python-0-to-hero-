@@ -35,3 +35,12 @@ for k1 in range(1, 10):
 
 dic = {k1: {k2: k1 * k2 for k2 in range(1, 5)} for k1 in range(1, 10)}
 print(dic)
+
+words = ['data', 'python', 'django','webscraping', 'tensorflow']
+
+print({string : len(string) for string in words if len(string) > 5})
+
+print({string : 'long' if len(string) > 5 else 'short' for string in words})
+
+zip_dict = {i:j for i,j in zip(words, range(len(words)))}
+print(zip_dict)
