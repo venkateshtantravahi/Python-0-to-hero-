@@ -1,72 +1,20 @@
 """
-When Decision making is required we use the "if..elif..else" in python
+In python, break and continue stmts can alter the flow of loop
 
-if test_expression:
-    statements of code
-
-if test_expression:
-    if block code
-else:
-    Body of else/ else block code
-
-if test_expression:
-    if block code
-elif test_expression:
-    elif block code
-else:
-    else block code
-
+Loops iterate over a block of code until the test expression is flase, but sometimes we want
+to terminate the current iteration or even whole loop that's when break and continue come into picture
 """
 
-num = int(input("PLease enter a number: "))
-if num > 0:
-    print(num, " is a positive number.")
+for char in "Python":
+    if char == "h":
+        break
+    print("Breaked char was: ", char)
 
-print("------------------------------------------------------")
+for char in "Python":
+    if char == "h":
+        continue
+    print(char)
 
-if num >= 0:
-    print(num, " is a positive number.")
-else:
-    print(num, " is a negative number.")
-
-print("------------------------------------------------------")
-
-if num > 0:
-    print(num, " is a positive number.")
-elif num == 0:
-    print(num, "Zero.")
-else:
-    print(num, "is a negative number.")
-
-"""
-Writing one if under other is nesting 
-"""
-print("------------------------------------------------------")
-if num >= 0:
-    if num == 0:
-        print("Zero")
-    else:
-        print("Positive Integer")
-else:
-    print("Negative Integer")
-
-print("////////////////////////////////////////////////////////////////")
-
-age = int(input("Please enter your age: "))
-
-if age >= 21:
-    isGraduated = True
-else:
-    isGraduated = False
-
-if age >= 18:
-    hasLicense = True
-else:
-    hasLicense = False
-
-if isGraduated:
-    print("He is graduated and has license.")
-elif hasLicense and not isGraduated:
-    print('He"s not graduated but has license')
-else:
-    print('He"s neither graduated nor licensed')
+sequence = {"p", "y", "t", "h", "o", "n"}
+for val in sequence:
+    pass
