@@ -48,10 +48,13 @@ for char in string:
     print("CHaracter in string is:", char)
 
 
-# Given list of customers get the list of active customers 
-# condition for active is atleast 5% of total customers 
+# Given list of customers get the list of active customers
+# condition for active is atleast 5% of total customers
 customers = list(map(str, input("Please Enter sequence of customers: ").split()))
-customer_trades_percentile = dict((customer, (customers.count(customer)/len(customers)*100)) for customer in customers)
+customer_trades_percentile = dict(
+    (customer, (customers.count(customer) / len(customers) * 100))
+    for customer in customers
+)
 res = []
 for cust in customer_trades_percentile.items():
     if cust[1] >= 5.0:

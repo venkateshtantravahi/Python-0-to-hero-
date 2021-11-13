@@ -12,11 +12,9 @@ except:
 def example1(fh):
     for line in fh:
         line = line.rstrip()
-        x = re.findall('\S+@\S+', line)
+        x = re.findall("\S+@\S+", line)
         if len(x) > 0:
             print(x)
 
 
-
 example1(file_handle)
-

@@ -78,29 +78,29 @@ print("Symmetric-Difference btw A,B", A.symmetric_difference(B))
 Determines whether or not two sets have any elements in common
 returns True if x1 and x2 have no items in common
 """
-x1 = {'foo', 'bar','baz'}
-x2 = {'baz', 'qux', 'cux'}
+x1 = {"foo", "bar", "baz"}
+x2 = {"baz", "qux", "cux"}
 
 print(x1.isdisjoint(x2))
-print(x1.isdisjoint(x2-{'baz'}))
+print(x1.isdisjoint(x2 - {"baz"}))
 
 """
 6. x1.issubset(x2) / x1 <= x2
 returns True if x1 is usbset of x2 and viceversa
 """
-num1 = {2,3,4}
-print(num1.issubset({1,2,3,4,5,6,7,8,9}))
-print(num1 <= {2,3,4})
-print(num1 < {2,3,4})
+num1 = {2, 3, 4}
+print(num1.issubset({1, 2, 3, 4, 5, 6, 7, 8, 9}))
+print(num1 <= {2, 3, 4})
+print(num1 < {2, 3, 4})
 
 """
 7. issuperset() 
 superset is reverse of subset 
 returns true if x1 is superset of x2
 """
-print(x1.issuperset({'foo'}))
-print(x1 >= {'foo'})
-print(x1 > {'foo','bar','baz'})
+print(x1.issuperset({"foo"}))
+print(x1 >= {"foo"})
+print(x1 > {"foo", "bar", "baz"})
 
 """
 8. intersection_update() or &=
@@ -128,15 +128,15 @@ Frozen Sets
 Python provides another built-in type called a frozenset, which is in all respects exactly like a set, 
 except that a frozenset is immutable. You can perform non-modifying operations on a frozenset.
 """
-fs = frozenset(['foo','bar','zoo'])
+fs = frozenset(["foo", "bar", "zoo"])
 
 print("The frozen set is {}".format(fs))
 print("Length of frozen set is {}".format(fs))
 
-#intersectioin operation with frozenset 
-print("The intersection operation results: ",fs & {'baz', 'qux', 'quux'})
+# intersectioin operation with frozenset
+print("The intersection operation results: ", fs & {"baz", "qux", "quux"})
 
-# restrictions with frozenset 
+# restrictions with frozenset
 """
 >>> fs.add('quz')
 Traceback (most recent call last):
@@ -157,16 +157,15 @@ AttributeError: 'frozenset' object has no attribute 'clear'
 Python does not perform augmented assignments on frozensets in place. The statement x &= s is effectively equivalent to x = x & s. 
 It isn’t modifying the original x. It is reassigning x to a new object, and the object x originally referenced is gone.
 """
-f = frozenset(['foo', 'bar', 'baz'])
+f = frozenset(["foo", "bar", "baz"])
 print("Originally created frozenset memory id : {}".format(id(f)))
-#augmented assignment
+# augmented assignment
 f &= s
 print("ID of f after augemented assignment is {}".format(id(f)))
 
-# Creating dict with frozensets 
+# Creating dict with frozensets
 """As sets are unhashable we can't use them to create dict obj but as frozenset are immutable we can use them as keys and other iterable obj as keys"""
 x = frozenset({1, 2, 3})
-y = frozenset({'a', 'b', 'c'})
-d = {x: 'foo', y: 'bar'}
+y = frozenset({"a", "b", "c"})
+d = {x: "foo", y: "bar"}
 print("The newly created dict obj is {}".format(d))
-

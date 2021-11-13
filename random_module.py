@@ -9,7 +9,7 @@ want more help on random , again open python interpretor
 help> random
 """
 
-import random 
+import random
 
 # seed()
 """
@@ -24,7 +24,7 @@ version = an int specifying how to convert a to int , default is 2.
 random.seed(10)
 print(random.random())
 
-# sample 
+# sample
 """
 This method used for generating sample items from a list or range of items, without changing 
 original sequence
@@ -33,8 +33,8 @@ where sequence = list,set, range etc.
 k = the sample size
 """
 
-print(random.sample(range(99),k=2)) 
-print(random.sample(range(20),k=18))
+print(random.sample(range(99), k=2))
+print(random.sample(range(20), k=18))
 
 # getstate() and setstate()
 """
@@ -59,15 +59,15 @@ all the way back to the beginning and reproduce the entire sequence to that poin
 """
 random.seed(42)
 
-print(random.sample(range(20),k=10))
+print(random.sample(range(20), k=10))
 
-st = random.getstate()  # remeber this state 
+st = random.getstate()  # remeber this state
 
-print(random.sample(range(20),k=20)) # print 20
+print(random.sample(range(20), k=20))  # print 20
 
-random.setstate(st)     # restore state
+random.setstate(st)  # restore state
 
-print(random.sample(range(20),k=10)) #print same first 10
+print(random.sample(range(20), k=10))  # print same first 10
 
 # getrandbits()
 """
@@ -85,15 +85,15 @@ here start is optional if not given default will be 0.
 end is required .
 step is optional and default = 1.
 """
-print(random.randrange(3,10))
-print(random.randrange(10,100,5))
+print(random.randrange(3, 10))
+print(random.randrange(10, 100, 5))
 
 # randint()
 """
 The randint() method returns an integer number selected element from the specified range.
 SYNTAX : random.randint(start, stop)
 """
-print(random.randint(5,20))
+print(random.randint(5, 20))
 
 # choice()
 """
@@ -125,8 +125,8 @@ A list were you can weigh the possibility for each value,
 only this time the possibility is accumulated.
 An integer defining the length of the returned list
 """
-mychoices = ["python", 'c++','Sql']
-print(random.choices(mylist, weights = [10, 5, 4], k = 14))
+mychoices = ["python", "c++", "Sql"]
+print(random.choices(mylist, weights=[10, 5, 4], k=14))
 
 # shuffle()
 """

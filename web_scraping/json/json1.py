@@ -1,6 +1,6 @@
 import json
 
-data = '''{
+data = """{
     "name": "Chuck",
     "phone":{
         "type":"intl",
@@ -9,10 +9,10 @@ data = '''{
     "emial": {
         "hide": "yes"
     }
-}'''
+}"""
 
 # we can also write our data in the following way also :
-'''
+"""
 data = [
     {
         "id": "001",
@@ -24,8 +24,8 @@ data = [
         "x" :"7",
         "name" : "john"
     }
-]'''
+]"""
 
 info = json.loads(data)
-print('Name:', info["name"])
+print("Name:", info["name"])
 print("Hide:", info["email"]["hide"])

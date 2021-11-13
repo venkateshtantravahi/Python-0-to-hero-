@@ -71,11 +71,11 @@ elif hasLicense and not isGraduated:
 else:
     print('He"s neither graduated nor licensed')
 
-# Comapring numbers 
+# Comapring numbers
 a, b, c = int(input().split())
-if a >= b and a >= c :
+if a >= b and a >= c:
     print("a is greatest of three")
-elif b>= a and b>=c:
+elif b >= a and b >= c:
     print("b is the largest of three")
 else:
     print("c is the largest of three")
