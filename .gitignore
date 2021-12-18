@@ -1,0 +1,5 @@
+# extensions 
+*.vscode
+#db files
+*.db
+*.sqlite
