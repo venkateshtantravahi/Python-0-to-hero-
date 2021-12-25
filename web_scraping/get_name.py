@@ -5,7 +5,9 @@ last name that you retrieve.
 Hint: The first character of the name of the last page that you will load is: M
 """
 
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import ssl
 from bs4 import BeautifulSoup
 

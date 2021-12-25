@@ -1,4 +1,6 @@
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import json
 
 serviceurl = "http://maps.googleapis.com/maps/api/geocode/json?"
