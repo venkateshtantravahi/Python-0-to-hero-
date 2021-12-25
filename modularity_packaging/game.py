@@ -1,5 +1,6 @@
 import pygame
 from blob import Blob
+import sys
 
 STARTING_BLUE_BLOBS = 10
 STARTING_RED_BLOBS = 3
@@ -38,7 +39,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
-                quit()
+                sys.exit()
         draw_environment([blue_blobs, red_blobs])
         clock.tick(60)
 
