@@ -24,14 +24,14 @@ for indx in range(len(lst)):
 
 for i in lst:
     print(i)
-else:
-    print("No item left")
+    
+print("No item left")
 
 for i in lst:
     if i == 31:
         print("found")
-else:
-    print("Not found")
+    
+print("Not found")
 
 
 student_name = "John"

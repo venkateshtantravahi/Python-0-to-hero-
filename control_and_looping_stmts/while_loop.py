@@ -24,5 +24,5 @@ print("The sum of " + str(n) + " numbers is ", sum)
 # loops are always infinite
 while counter == n:
     print("Equals")
-else:
-    print("Done")
+    
+print("Done")
