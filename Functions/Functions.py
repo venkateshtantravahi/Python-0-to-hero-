@@ -82,7 +82,6 @@ def hello1():
         None    
     """
     print("Hello World")
-    return
 
 
 hello1()
