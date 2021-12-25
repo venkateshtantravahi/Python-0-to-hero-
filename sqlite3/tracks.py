@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 import sqlite3
 
 conn = sqlite3.connect("trackdb.sqlite")
