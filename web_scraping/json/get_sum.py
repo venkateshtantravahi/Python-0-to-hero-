@@ -12,7 +12,7 @@ ctx.verify_mode = ssl.CERT_NONE
 # hitting url and retrieving data
 url = input("Enter Location: ")
 print("Retrieving {}".format(url))
-data = urllib.request.urlopen(url, context=ctx)
+data = urllib.request.urlopen(url, context=ctx) #nosec
 data = (data.read()).decode()
 print("Retrieved {} characters".format(len(data)))
 

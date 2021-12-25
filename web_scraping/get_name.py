@@ -21,7 +21,13 @@ position = int(input("Enter the link position: "))
 
 
 for i in range(repeat):
-    html = urllib.request.urlopen(url, context=ctx).read()  # url data read
+    # if url.lower().startswith("http"):
+    #     req = urllib.request.Request(url)
+    # else:
+    #     raise ValueError from None
+    # with urllib.request.urlopen(req) as response:
+    #     html = response.read()  # nosec
+    html = urllib.request.urlopen(url, context=ctx).read()  # nosec
     soup = BeautifulSoup(html, "html.parser")  # parsing html using bs4
     tags = soup("a")  # retrieving anchor objects
     count = 0

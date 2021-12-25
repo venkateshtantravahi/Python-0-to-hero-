@@ -10,7 +10,7 @@ ctx.verify_mode = ssl.CERT_NONE
 
 # hitting url
 url = input("Enter URL - ")
-data = urllib.request.urlopen(url, context=ctx)
+data = urllib.request.urlopen(url, context=ctx) #nosec
 data = (data.read()).decode()
 tree = ET.fromstring(data)
 lst = tree.findall("comments/comment")

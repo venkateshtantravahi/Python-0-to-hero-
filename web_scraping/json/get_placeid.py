@@ -17,7 +17,7 @@ while True:
     parms["key"] = 42
     url = service_url + urllib.parse.urlencode(parms)
     print("Retrieving url", url)
-    uh = urllib.request.urlopen(url, context=ctx)
+    uh = urllib.request.urlopen(url, context=ctx) #nosec
     data = uh.read().decode()
     print("Retrieved", len(data), "characters")
 

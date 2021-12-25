@@ -11,7 +11,7 @@ while True:
     url = serviceurl + urllib.parse.urlencode({"address": address})
 
     print("Retrieving url", url)
-    uh = urllib.request.urlopen(url)
+    uh = urllib.request.urlopen(url) #nosec
     data = uh.read().decode()
     print("Retrieved", len(data), "characters")
 
