@@ -50,7 +50,7 @@ for line in fh:
         data = cur.fetchone()[0]
         print("Found in database ", address)
         continue
-    except:
+    except BaseException:
         pass
 
     parms = dict()
@@ -60,7 +60,7 @@ for line in fh:
     url = serviceurl + urllib.parse.urlencode(parms)
 
     print("Retrieving", url)
-    uh = urllib.request.urlopen(url, context=ctx)
+    uh = urllib.request.urlopen(url, context=ctx) #nosec
     data = uh.read().decode()
     print("Retrieved", len(data), "characters", data[:20].replace("\n", " "))
     count = count + 1

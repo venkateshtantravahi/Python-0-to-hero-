@@ -13,7 +13,7 @@ for row in cur:
     data = str(row[1].decode())
     try:
         js = json.loads(str(data))
-    except:
+    except BaseException:
         continue
 
     if not ("status" in js and js["status"] == "OK"):
@@ -33,7 +33,7 @@ for row in cur:
             fhand.write(",\n")
         output = "[" + str(lat) + "," + str(lng) + ", '" + where + "']"
         fhand.write(output)
-    except:
+    except BaseException:
         continue
 
 fhand.write("\n];\n")
