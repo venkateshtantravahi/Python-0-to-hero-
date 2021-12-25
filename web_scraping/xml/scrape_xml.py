@@ -1,6 +1,6 @@
 # url : http://py4e-data.dr-chuck.net/comments_1410642.xml
 import urllib.request, urllib.parse, urllib.error
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 import ssl
 
 # ignore secure socket layer
