@@ -1,6 +1,8 @@
 # url : http://py4e-data.dr-chuck.net/comments_1410642.xml
 
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import json
 import ssl
 

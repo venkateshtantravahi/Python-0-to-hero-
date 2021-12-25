@@ -1,5 +1,8 @@
-import urllib.request, urllib.parse, urllib.error
-import json, ssl
+import urllib.request
+import urllib.parse
+import urllib.error
+import json
+import ssl
 
 service_url = "http://py4e-data.dr-chuck.net/json?"
 

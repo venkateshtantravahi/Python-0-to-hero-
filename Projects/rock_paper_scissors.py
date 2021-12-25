@@ -2,7 +2,9 @@
 Rock Paper Scissor Project without UI
 """
 
-import random, re, os
+import random
+import re
+import os
 
 i_count, u_count = 0, 0
 
